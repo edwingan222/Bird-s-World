@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bird\'s World</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_bird_list">Birds</string>
+    <string name="title_bird_detail">Bird Detail</string>
+    <string name="title_activity_bird_details">Bird Details</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="action_settings">Settings</string>
+    <string name="action1">Settings</string>
+    <string name="action2">About</string>
+    <string name="title_activity_detail">MainActivity</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings1">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="location_found">Back</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="sci_name"><b>Scientific Name</b></string>
+    <string name="dot_dot"><b>:</b></string>
+    <string name="local_name"><b>Local Name</b></string>
+    <string name="bird_size"><b>Bird Size (cm)</b></string>
+    <string name="habitat"><b>Habitat</b></string>
+	<string name="dist"><b>Distribution</b></string>
+	<string name="detail"><b>Detail</b></string>
+	<string name="reference"><b>Reference</b></string>
+</resources>

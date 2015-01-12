@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.birdsworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".BirdListActivity"
+            android:label="@string/title_bird_list"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".BirdDetailActivity"
+            android:label="@string/title_bird_detail"
+            android:parentActivityName=".BirdListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.birdsworld.BirdListActivity" />
+        </activity>
+        <activity
+            android:name=".BirdDetails"
+            android:label="@string/title_activity_bird_details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyAppTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyAppTheme.ActionBar" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />
+            
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyAppTheme.ActionBar" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        
+        <!-- Search results activity -->
+        <activity android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity" 
+            android:theme="@style/Theme.MyAppTheme.ActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+ 
+    </application>
+
+</manifest>

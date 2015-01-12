@@ -1,0 +1,343 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="993dp"
+            android:layout_weight="5.33"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/birdPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:clickable="true"
+                android:paddingTop="@dimen/image_padding1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/booby" />
+
+            <TextView
+                android:id="@+id/birdNameField"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/text_padding1"
+                android:paddingRight="@dimen/text_padding1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/BirdNameSize1"
+                android:textStyle="italic" />
+
+            <TableLayout
+                android:id="@+id/TableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/text_padding1"
+                android:paddingRight="@dimen/text_padding1"
+                android:paddingTop="@dimen/text_padding1" >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical" />
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/sciName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sci_name"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/sciNameField"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/text_padding1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/localName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/local_name"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/localNameField"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/birdSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bird_size"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/birdSizeField"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/habitat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/habitat"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/habitatField"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/distribution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dist"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/distributionField1"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/distributionNull2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView08"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/distributionField2"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/distributionNull3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/distributionField3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/BirdDetailsPadding"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:text="@string/detail"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/detailField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </LinearLayout>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/BirdDetailsPadding" >
+
+                    <TextView
+                        android:id="@+id/reference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/BirdDetailsPadding"
+                        android:text="@string/reference"
+                        android:textSize="@dimen/BirdDetailsSize" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dot_dot"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.00"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/image_padding1" >
+
+                    <TextView
+                        android:id="@+id/referenceField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/BirdDetailsSize" />
+                </LinearLayout>
+            </TableLayout>
+
+            <ImageButton
+                android:id="@+id/button_playsound"
+                style="@drawable/playsound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.00"
+                android:background="@drawable/playsound" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

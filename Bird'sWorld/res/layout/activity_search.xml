@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="${relativePackage}.${activityClass}" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/QueryPadding"
+        android:paddingTop="@dimen/QueryPadding"
+        android:text="query"
+        android:textSize="@dimen/QuerySize" />
+
+    <ListView
+        android:id="@+id/resultView1"
+        android:layout_width="match_parent"
+        android:layout_height="396dp" >
+    </ListView>
+</LinearLayout>
+
+<Button
+    android:id="@+id/advancedSearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="Advanced Search" />
+
+</RelativeLayout>

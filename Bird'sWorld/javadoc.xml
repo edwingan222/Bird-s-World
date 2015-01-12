@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="libs/android-support-v4.jar" destdir="doc" doctitle="BirdWorld" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="1.6" sourcefiles="src/com/example/birdsworld/About.java,src/com/example/birdsworld/DataBaseHelper.java,src/com/example/birdsworld/BirdDetails.java,src/com/example/birdsworld/MainActivity.java,src/com/example/birdsworld/SearchActivity.java,src/com/example/birdsworld/SettingsActivity.java,src/com/example/birdsworld/SplashScreen.java" sourcepath="src;gen" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
